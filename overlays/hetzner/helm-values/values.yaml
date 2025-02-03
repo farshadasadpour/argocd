@@ -1,40 +1,4 @@
-## Argo CD configuration
-## Ref: https://github.com/argoproj/argo-cd
-##
-
-# -- Provide a name in place of `argocd`
-nameOverride: argocd
-# -- String to fully override `"argo-cd.fullname"`
-fullnameOverride: ""
-# -- Override the Kubernetes version, which is used to evaluate certain manifests
-kubeVersionOverride: ""
-# Override APIVersions
-# If you want to template helm charts but cannot access k8s API server
-# you can set api versions here
-apiVersionOverrides: {}
-
-# -- Create aggregated roles that extend existing cluster roles to interact with argo-cd resources
-## Ref: https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles
-createAggregateRoles: false
-# -- Create cluster roles for cluster-wide installation.
-## Used when you manage applications in the same cluster where Argo CD runs
-createClusterRoles: true
-
-openshift:
-  # -- enables using arbitrary uid for argo repo server
-  enabled: false
-
-## Custom resource configuration
-crds:
-  # -- Install and upgrade CRDs
-  install: true
-  # -- Keep CRDs on chart uninstall
-  keep: true
-  # -- Annotations to be added to all CRDs
-  annotations: {}
-  # -- Addtional labels to be added to all CRDs
-  additionalLabels: {}
-
+overlay_name: hetzner
 ## Globally shared configuration
 global:
   # -- Default domain used by all components
