@@ -5,5 +5,5 @@ metadata:
 chartHome: ../../base/helm-charts
 name: argocd-6-7-12
 additionalValuesFiles:
-  # - ../base/shared_values.yaml
+  - ../base/shared_values.yaml
   - helm-values/values.yaml
