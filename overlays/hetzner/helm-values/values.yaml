@@ -1,4 +1,3 @@
-overlay_name: hetzner
 ## Globally shared configuration
 global:
   # -- Default domain used by all components
