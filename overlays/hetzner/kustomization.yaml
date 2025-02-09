@@ -1,11 +1,11 @@
-helmGlobals:
-  chartHome: ../../base/helm-charts
+# helmGlobals:
+#   chartHome: ../../base/helm-charts
 
-helmCharts:
-  - name: argocd-6-7-12
-    version: 6.7.12
-    releaseName: argocd
-    valuesFile: helm-values/values.yaml
+# helmCharts:
+#   - name: argocd-6-7-12
+#     version: 6.7.12
+#     releaseName: argocd
+#     valuesFile: helm-values/values.yaml
 
 resources:
   - ../base
