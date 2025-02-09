@@ -2,7 +2,7 @@ apiVersion: builtin
 kind: HelmChartInflationGenerator
 metadata:
   name: argocd
-chartHome: ../../base/helm-charts/argocd-6-7-12
+chartHome: ../../base/helm-charts
 name: argocd-6-7-12
 additionalValuesFiles:
   - ../base/shared_values.yaml
